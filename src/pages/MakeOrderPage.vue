@@ -1,22 +1,22 @@
 <template>
   <div class="first-component">
     <div class="white-block">
-      <h2 class="center-text title-appointment-text">Запись на прием</h2>
+      <h2 class="center-text title-appointment-text">Оформление заказа</h2>
     </div>
     <!-- Форма записи на прием -->
-    <appointment-form></appointment-form>
+    <order-form></order-form>
   </div>
 </template>
 
 <script>
-import AppointmentForm from "@/components/AppointmentForm.vue";
+import OrderForm from '@/components/OrderForm.vue'
 
 export default {
-  name: "AppointmentPage",
+  name: 'MakeOrderPage',
   components: {
-    AppointmentForm, // Зарегистрируйте компонент
+    OrderForm, // Зарегистрируйте компонент
   },
-};
+}
 </script>
 
 <style scoped>
@@ -25,14 +25,14 @@ export default {
 }
 
 .title-text {
-  font-family: "Your-Desired-Font", sans-serif;
+  font-family: 'Your-Desired-Font', sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: white;
 }
 
 .subtitle-text {
-  font-family: "Your-Desired-Font", sans-serif;
+  font-family: 'Your-Desired-Font', sans-serif;
   font-size: 26px;
   color: white;
 }
@@ -61,7 +61,7 @@ export default {
 .nav-button {
   margin: 54px 10px 8px 10px;
   padding: 12px 24px;
-  font-family: "Your-Desired-Font", sans-serif;
+  font-family: 'Your-Desired-Font', sans-serif;
   font-size: 16px;
   color: white;
   text-decoration: none;
@@ -78,7 +78,7 @@ export default {
 /* appoinment-page */
 
 .title-appointment-text {
-  font-family: "Your-Desired-Font", sans-serif;
+  font-family: 'Your-Desired-Font', sans-serif;
   font-size: 24px;
   color: #333; /* Цвет текста в белом блоке */
 }

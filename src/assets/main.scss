@@ -1,0 +1,89 @@
+.top-panel {
+  display: flex;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  background-color: #47b8ff;
+}
+
+.navigation {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.cart {
+  background-color: #47b8ff;
+  width: 50px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.appointment-form {
+  padding:10px
+}
+
+.map {
+  padding: 10px;
+  &__info {  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "map__address map__frame";
+}
+
+  &__address { grid-area: map__address; font-size: 1.5em }
+
+  &__frame { grid-area: map__frame; }
+
+}
+
+.order-page {
+  padding: 20px;
+}
+.products {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . .";
+}
+
+.product {
+  border: 1px solid rgba(71, 184, 255, 0.5);
+  padding: 5px;
+  &__photo {
+    display: flex;
+  }
+  &__img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+}
+
+.doctors-page {
+  padding: 20px;
+  &__img {
+    width: 300px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+  &__info {  display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "doctors-page__photo doctors-page__text";
+  }
+
+  &__photo { grid-area: doctors-page__photo; }
+
+  &__text { grid-area: doctors-page__text; }
+
+}
